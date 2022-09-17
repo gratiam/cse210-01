@@ -1,4 +1,7 @@
-"""Week 01 prove: Tic-Tac-Toe"""
+"""
+CSE210 Week 01 prove: Tic-Tac-Toe
+Written by Graham McClure.
+"""
 def main():
     # list of numbers of where
     o_moves = []
@@ -48,11 +51,13 @@ def main():
 def draw_board(x, o):
     """Draws the tic-tac-toe board"""
     nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    # replace nums with x and o
+    # replace numbers with o
     for i in range(len(o)):
-        # with num from list o as index, replace
+        # replace with O
         nums[o[i]-1] = "o"
+    # replace numbers with X
     for i in range(len(x)):
+        # replace with X
         nums[x[i]-1] = "x"
         
     # from 0 to 9 in steps of 3, print out the board
